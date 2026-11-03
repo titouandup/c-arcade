@@ -12,12 +12,13 @@ int main() {
     std::cout << "Bienvenue dans le jeu du plus ou moins !" << std::endl;
     int min = 1;
     int max = 100;
+    std::cout << "Le nombre est entre " << min << " et " << max << "." << std::endl;
     int nombre_a_deviner = tirer_nombre(min, max);
     int success = 0;
 
     while (success != 1) {
-        std::cout << "Le nombre est entre " << min << " et " << max << "." << std::endl;
-        std::cout << "ton essai : " << std::endl;
+        
+        std::cout << "ton essai : ";
         int essai;
         std::cin >> essai;
         if (essai < nombre_a_deviner) {
