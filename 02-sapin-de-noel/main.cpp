@@ -4,10 +4,13 @@ void tracage(int hauteur){
 }
 
 int hauteur(){
-    return 0;
+    std::cout << "Entrez la hauteur du sapin : ";
+    int h;
+    std::cin>> h;
+    return h;
 }
 
 int main() {
-    
+    tracage(hauteur());
     return 0;
 }
