@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 
 char decaler_lettre(char c, int k){
     if (c+k > 'z'){
@@ -15,9 +14,16 @@ void chiffrer(char message[], int k){
         std::cout << message[i];
     }
     std::cout << std::endl;
+    dechiffrer(message, k);
 }
 
 void dechiffrer(char message[], int k){
+    std::cout << "Message déchiffré : ";
+    for(int i=0; message[i] != '\0'; i++){
+        message[i] = decaler_lettre(message[i], -k);
+        std::cout << message[i];
+    }
+    std::cout << std::endl;
 }
 
 int main() {
