@@ -14,6 +14,9 @@ void tracage(int hauteur){
             if(etoile == 0){
                 std::cout << "°";
                 etoile = tirer_nombre(3,10);
+            } else if (i == 0) {
+                std::cout << "^";
+                etoile--;
             } else {
                 std::cout << "*";
                 etoile--;
