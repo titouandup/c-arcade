@@ -2,8 +2,10 @@
 #include <cstring>
 
 char decaler_lettre(char c, int k){
-    
-    return 0;
+    if (c+k > 'z'){
+        return c+k-26;
+    }
+    return c+k; 
 }
 
 void chiffrer(char message[], int k){
